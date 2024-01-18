@@ -346,13 +346,6 @@ a{
     margin: 0;
 }
 
-.services-ellipse{
-    display: flex;
-    justify-content: center;
-    margin-top: 32px;
-    gap: 24px;
-}
-
 .carousel-button{
     display: flex;
     justify-content: center;
