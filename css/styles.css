@@ -73,7 +73,7 @@ a{
 
 .conteiner {
     width: 100%;
-    max-width: 1288px;
+    max-width: 1260px;
     margin: 0 auto;
     padding: 0 20px;
 }
@@ -230,72 +230,47 @@ a{
 
 .big-star{
     position: absolute;
-    top: 995px;
-    left: 940px;
+    top: 360px;
+    left: 150px;
     fill: var(--big-star-color);
-}
-
-.big-star:hover{
-    animation-name: spin;
-    animation-duration: 2s;
-}
-
-@keyframes spin {
-    0%{
-        transform: rotate(0) scale(1.3);
-    }
-    50%{
-        transform: rotate(240deg) scale(1.3);
-    }
+    animation: spin 5s infinite;
 }
 
 .middle-star{
-    top: 690px;
+    top: 40px;
     position: absolute;
-    left: 1270px;
+    right: 0px;
     fill: var(--color-brand-light);
-}
-
-.middle-star:hover{
-    animation-name: spin;
-    animation-duration: 2s;
-}
-        
-@keyframes spin {
-    0% {
-        transform: rotate(0) scale(1.3);
-    }
-        
-    50% {
-        transform: rotate(240deg) scale(1.3);
-    }
+    animation: spin 5s infinite;
 }
 
 .little-star{
     position: absolute;
-    top: 935px;
-    left: 1270px;
+    top: 260px;
+    right: 10px;
     fill: var(--color-privacy-policy);
+    animation: spin 5s infinite;
 }
 
-.little-star:hover{
-    animation-name: spin;
-    animation-duration: 2s;
-}
-        
 @keyframes spin {
     0% {
-        transform: rotate(0) scale(1.3);
-    }
-        
+        transform: rotate(0);
+    }   
     50% {
-        transform: rotate(240deg) scale(1.3);
+        transform: rotate(240deg);
     }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.after-procedure{
+    margin-top: 40px;
+    padding-left: 172px;
 }
 
 .info-photo{
-    margin-top: 40px;
-    padding-left: 172px;
+    position: relative;
 }
 
 /* Advantages-section */
@@ -370,6 +345,14 @@ a{
     padding: 0;
     margin: 0;
 }
+
+.services-ellipse{
+    display: flex;
+    justify-content: center;
+    margin-top: 32px;
+    gap: 24px;
+}
+
 .carousel-button{
     display: flex;
     justify-content: center;

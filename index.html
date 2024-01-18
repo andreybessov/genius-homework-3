@@ -82,7 +82,7 @@
                 нами краса назавжди
               </p>
             </div>
-            <div>
+            <div class="info-photo">
               <img
                 class="photo-result"
                 src="./images/to-procedure.jpg"
@@ -97,7 +97,7 @@
               <svg class="little-star" width="16" height="16">
                 <use href="./images/icons.svg#icon-big-star"></use>
               </svg>
-              <div class="info-photo">
+              <div class="after-procedure">
                 <img
                   class="photo-result"
                   src="./images/after-procedure.jpg"
@@ -155,23 +155,36 @@
                   <use href="./images/icons.svg#icon-Arrow"></use>
                 </svg>
               </button>
-              <ul class="services-list">
-                <li class="services-item">
-                  <article class="services-card first-card">
-                    <p class="services-text">Маски для обличчя</p>
-                  </article>
-                </li>
-                <li class="services-item">
-                  <article class="services-card second-card">
-                    <p class="services-text">Ін'єкції для обличчя</p>
-                  </article>
-                </li>
-                <li class="services-item">
-                  <article class="services-card third-card">
-                    <p class="services-text">Очищення обличчя</p>
-                  </article>
-                </li>
-              </ul>
+              <div>
+                <ul class="services-list">
+                  <li class="services-item">
+                    <article class="services-card first-card">
+                      <p class="services-text">Маски для обличчя</p>
+                    </article>
+                  </li>
+                  <li class="services-item">
+                    <article class="services-card second-card">
+                      <p class="services-text">Ін'єкції для обличчя</p>
+                    </article>
+                  </li>
+                  <li class="services-item">
+                    <article class="services-card third-card">
+                      <p class="services-text">Очищення обличчя</p>
+                    </article>
+                  </li>
+                </ul>
+                <div class="services-ellipse">
+                  <svg width="11" height="11">
+                    <use href="./images/icons.svg#icon-ellipse"></use>
+                  </svg>
+                  <svg width="11" height="11">
+                    <use href="./images/icons.svg#icon-ellipse"></use>
+                  </svg>
+                  <svg width="11" height="11">
+                    <use href="./images/icons.svg#icon-ellipse"></use>
+                  </svg>
+                </div>
+              </div>
               <button class="carousel-button next" type="button">
                 <svg width="16" height="16">
                   <use href="./images/icons.svg#icon-Arrow"></use>
@@ -201,15 +214,17 @@
               </h3>
               <form autocomplete="off">
                 <div class="form-field">
-                  <label for="user-name" class="form-label visually-hidden"
+                  <label
+                    for="contact-user-name"
+                    class="form-label visually-hidden"
                     >Ім'я</label
                   >
 
                   <input
                     type="text"
                     class="form-input"
-                    name="user-name"
-                    id="user-name"
+                    name="contact-user-name"
+                    id="contact-user-name"
                     placeholder="Введіть ім'я та призвіще"
                     required
                     pattern="^[Є-ЯҐа-їґ]+\s[Є-ЯҐа-їґ]+$"
@@ -217,14 +232,16 @@
                 </div>
 
                 <div class="form-field">
-                  <label for="user-tel" class="form-label visually-hidden"
+                  <label
+                    for="contact-user-tel"
+                    class="form-label visually-hidden"
                     >Телефон</label
                   >
                   <input
                     type="tel"
                     class="form-input"
-                    name="user-tel"
-                    id="user-tel"
+                    name="contact-user-tel"
+                    id="contact-user-tel"
                     placeholder="Ваш номер телефону"
                     required
                     pattern="^\+380[1-9]{1}\d{8}$"
@@ -232,14 +249,16 @@
                 </div>
 
                 <div class="form-field">
-                  <label for="user-email" class="form-label visually-hidden"
+                  <label
+                    for="contact-user-email"
+                    class="form-label visually-hidden"
                     >Електронна пошта</label
                   >
                   <input
                     type="email"
                     class="form-input"
-                    name="user-email"
-                    id="user-email"
+                    name="contact-user-email"
+                    id="contact-user-email"
                     placeholder="Ваша електронна адреса"
                     required
                   />
