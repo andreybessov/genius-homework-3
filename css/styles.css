@@ -596,7 +596,6 @@ a{
     background-image: url(../images/modal-background.png);
     border-radius: 48px;
     padding: 42px 144px;
-    overflow-y:auto;
 }
 
 .backdrop.is-hidden{
